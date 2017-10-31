@@ -1,0 +1,37 @@
+spring:
+  profiles:
+      active: dev
+  session:
+      store-type: none
+  thymeleaf:
+      prefix: classpath:/templates/
+      suffix: .html
+      mode: HTML5
+      encoding: UTF-8
+      cache: false
+mybatis:
+  mapperLocations: classpath:mybatis/mapper/*.xml
+  typeAliasesPackage: com.bolean.dao
+  configLocation: classpath:mybatis/mybatis-config.xml
+---
+spring:
+    profiles: dev
+    datasource:
+        platform: mysql
+        url: jdbc:mysql://localhost:3306/demo?useUnicode=true&characterEncoding=UTF-8&relaxAutoCommit=true&zeroDateTimeBehavior=convertToNull
+        username: root
+        password:
+        driverClassName: com.mysql.jdbc.Driver
+server:
+  port: 8080
+---
+spring:
+    profiles: prod
+    datasource:
+        platform: mysql
+        url: jdbc:mysql://localhost:3306/demo?useUnicode=true&characterEncoding=UTF-8&relaxAutoCommit=true&zeroDateTimeBehavior=convertToNull
+        username: root
+        password:
+        driverClassName: com.mysql.jdbc.Driver
+server:
+  port: 8081
