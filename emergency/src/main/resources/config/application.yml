@@ -9,10 +9,15 @@ spring:
       mode: HTML5
       encoding: UTF-8
       cache: false
-mybatis:
-  mapperLocations: classpath:mybatis/mapper/*.xml
-  typeAliasesPackage: com.bolean.dao
-  configLocation: classpath:mybatis/mybatis-config.xml
+  jpa:
+    show-sql: true
+    database: mysql
+    hibernate:
+      ddl-auto: update
+#mybatis:
+#  mapperLocations: classpath:mybatis/mapper/*.xml
+#  typeAliasesPackage: com.bolean.dao
+#  configLocation: classpath:mybatis/mybatis-config.xml
 ---
 spring:
     profiles: dev

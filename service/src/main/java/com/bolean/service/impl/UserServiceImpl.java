@@ -11,12 +11,12 @@ import java.util.List;
 
 @Service("UserService")
 public class UserServiceImpl implements UserService {
-    @Autowired
+    /*@Autowired
     private UserMapper userMapper;
 
 
     @Override
     public List<User> getAllUser() {
         return userMapper.getAllUser();
-    }
+    }*/
 }

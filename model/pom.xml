@@ -12,5 +12,11 @@
     <groupId>com.model</groupId>
     <artifactId>bolean-model</artifactId>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>com.common</groupId>
+            <artifactId>bolean-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 </project>

@@ -1,6 +1,12 @@
 package com.bolean.model;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name="t_user")
 public class User {
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private int userId;
     private String userName;
     private String passWord;
