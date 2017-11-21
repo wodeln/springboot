@@ -16,6 +16,7 @@ public class IndexController {
 
     @RequestMapping("/index")
     public String index(){
+
         return "index";
 
     }
@@ -23,7 +24,7 @@ public class IndexController {
     @RequestMapping("/getAllUser")
     public String getAllUser(){
         List<User> userList = userService.getAllUser();
-        System.out.print("22__________________");
+        System.out.print("22___333_____44__________");
         return "user_list";
     }
 }
