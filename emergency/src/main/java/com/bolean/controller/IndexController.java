@@ -16,7 +16,9 @@ public class IndexController {
 
     @RequestMapping("/index")
     public String index(){
+        System.out.print("1");
         return "index";
+
     }
 
     @RequestMapping("/getAllUser")
