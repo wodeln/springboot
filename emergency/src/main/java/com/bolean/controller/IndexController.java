@@ -16,7 +16,7 @@ public class IndexController {
 
     @RequestMapping("/index")
     public String index(){
-
+         // 为什么我qq看不到
         return "index";
 
     }
